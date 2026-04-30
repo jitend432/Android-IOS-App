@@ -21,7 +21,7 @@ export async function replace(routeName: string, params?: object) {
 }
 
 export async function resetAndNavigate(routeName: string) {
-    navigationRef.isReady();
+    navigationRef.isReady(); 
     if (navigationRef.isReady()) {
         navigationRef.dispatch(
             CommonActions.reset({
